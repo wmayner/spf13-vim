@@ -75,7 +75,9 @@
 
 " Use bundles config {
     if filereadable(expand("~/.vimrc.bundles"))
+        call plug#begin('~/.vim/bundle')
         source ~/.vimrc.bundles
+        call plug#end()
     endif
 " }
 
