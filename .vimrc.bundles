@@ -157,7 +157,7 @@
                 source ~/.vim/bundle/vim-snippets/snippets/support_functions.vim
             endif
         elseif count(g:spf13_bundle_groups, 'youcompleteme')
-            Bundle 'Valloric/YouCompleteMe', {'do': './install.py'}
+            Bundle 'Valloric/YouCompleteMe', {'do': './install.py --clang-completer'}
             Bundle 'SirVer/ultisnips'
             Bundle 'honza/vim-snippets'
         elseif count(g:spf13_bundle_groups, 'neocomplcache')
